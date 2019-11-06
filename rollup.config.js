@@ -35,6 +35,7 @@ export default {
 			}),
 			svelte({
 				dev,
+        preprocess,
 				hydratable: true,
 				emitCss: true
 			}),
@@ -79,6 +80,7 @@ export default {
 			}),
 			svelte({
 				generate: 'ssr',
+        preprocess,
 				dev
 			}),
 			resolve({
