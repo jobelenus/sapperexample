@@ -16,6 +16,8 @@ app.get('foo/', (req, res, next) => {
 	res.send("FOO")
 })
 
+app.use('/rest/', require('./backend/endpoints.js'));
+
 app.listen(PORT, err => {
 	if (err) console.log('error', err);
 });

@@ -16,9 +16,6 @@ const dedupe = importee => importee === 'svelte' || importee.startsWith('svelte/
 
 import sveltePreprocess from 'svelte-preprocess';
 const preprocess = sveltePreprocess({
-  scss: {
-    includePaths: ['src'],
-  },
   postcss: {
     plugins: [require('autoprefixer')],
   },
